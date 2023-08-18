@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(eternal INTERFACE)
 target_include_directories(eternal SYSTEM INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-option(WITH_TESTS "Enable tests" ON)
+option(WITH_TESTS "Enable tests" OFF)
 if (WITH_TESTS)
     add_subdirectory(test)
 endif()
